@@ -16,10 +16,12 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-dotenv_file = os.path.join(BASE_DIR, ".env")
-if os.path.isfile(dotenv_file):
-    dotenv.load_dotenv(dotenv_file)
-SECRET_KEY = os.environ['SECRET_KEY']    
+#dotenv_file = os.path.join(BASE_DIR, ".env")
+#if os.path.isfile(dotenv_file):
+#    dotenv.load_dotenv(dotenv_file)
+#SECRET_KEY = os.environ['SECRET_KEY']    
+
+SECRET_KEY = 'django-insecure-^8%@6q^krgc5^csh7+-m+b&n*+l384cl1py@#g0wtaw%5ou%c)'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
